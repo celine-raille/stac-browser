@@ -2,7 +2,7 @@ module.exports = {
     catalogUrl: null,
     catalogTitle: "STAC Browser",
     allowExternalAccess: true, // Must be true if catalogUrl is not given
-    allowedDomains: [],
+    allowedDomains: ["geodes-lab.fr"],
     detectLocaleFromBrowser: true,
     storeLocale: true,
     locale: "en",
@@ -49,5 +49,5 @@ module.exports = {
     requestQueryParameters: {},
     socialSharing: ['email', 'bsky', 'mastodon', 'x'],
     preprocessSTAC: null,
-    authConfig: null
+    authConfig: {type: 'http', scheme: 'basic'}
 };
